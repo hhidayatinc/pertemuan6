@@ -13,6 +13,7 @@ class ItemPage extends StatelessWidget{
     
     //final Item itemArgs = ModalRoute.of(context).settings.arguments;
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text("Detail"),
@@ -27,7 +28,6 @@ class ItemPage extends StatelessWidget{
           ),
           ),
           body: Row(
-            
            mainAxisAlignment: MainAxisAlignment.center,
             children: [
             Container(
@@ -35,7 +35,8 @@ class ItemPage extends StatelessWidget{
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  
+                  Image(image: AssetImage(newItem.gambar), height: 200, width: 200,),
+                  SizedBox(height: 10,),
                   Text("Name : " + newItem.title, style: TextStyle(fontSize: 20 ),),
                   Text("Released : " + newItem.year, style: TextStyle(fontSize: 20),),
                   Text("Genre : " + newItem.genre, style: TextStyle(fontSize: 20),),
@@ -43,11 +44,7 @@ class ItemPage extends StatelessWidget{
                 ],),
                 margin: EdgeInsets.all(8),
             ),
-            
-          
           ],
-          
-          
           ),
           ),
     );

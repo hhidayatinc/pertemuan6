@@ -5,16 +5,16 @@ import 'package:belanja/pages/item_page.dart';
 
 class HomePage extends StatelessWidget {
   final List<Item> items = [
-    Item(title: 'Aquaman ', genre: 'Action,Adventure,Fantasy',
+    Item( gambar: 'assets/images/aquaman.jpg', title: 'Aquaman ', genre: 'Action,Adventure,Fantasy',
     ratings: '6.9/10', 
     year: '2018'),
-    Item(title: 'Coco ', genre: 'Animation, Adventure, Family',
+    Item(gambar: 'assets/images/coco.jpg', title: 'Coco ', genre: 'Animation, Adventure, Family',
     ratings: '8.4/10', 
     year: '2017'),
-     Item(title: 'Up ', genre: 'Animation, Adventure, Comedy',
+     Item(gambar: 'assets/images/up.jpg', title: 'Up ', genre: 'Animation, Adventure, Comedy',
     ratings: '8.2/10', 
     year: '2009'),
-     Item(title: 'Black Panther ', genre: 'Action, Adventure, Sci-Fi',
+     Item(gambar: 'assets/images/blackpanther.jpg',title: 'Black Panther ', genre: 'Action, Adventure, Sci-Fi',
     ratings: '7.3/10', 
     year: '2018'),
   ];
@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
         ),
         home: Scaffold(
           appBar: AppBar(
-            title : Text("About Movies")
+            title : Text("Movies List ")
           ),
           body: Container(
               margin: EdgeInsets.all(8),
