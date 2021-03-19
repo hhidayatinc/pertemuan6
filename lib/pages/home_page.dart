@@ -11,6 +11,12 @@ class HomePage extends StatelessWidget {
     Item(title: 'Coco ', genre: 'Animation, Adventure, Family',
     ratings: '8.4/10', 
     year: '2017'),
+     Item(title: 'Up ', genre: 'Animation, Adventure, Comedy',
+    ratings: '8.2/10', 
+    year: '2009'),
+     Item(title: 'Black Panther ', genre: 'Action, Adventure, Sci-Fi',
+    ratings: '7.3/10', 
+    year: '2018'),
   ];
 
   @override
